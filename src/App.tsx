@@ -6,6 +6,7 @@ import { FloatingLabelInput } from './components/FloatingLabelInput';
 import { SmartButton } from './components/SmartButton';
 import { ProgressBar } from './components/ProgressBar';
 import { playClick, playSuccessChime, playSwoosh } from './utils/audio';
+import logo from './assets/logo.png'; 
 
 const tg = (window as any).Telegram?.WebApp;
 
@@ -369,7 +370,7 @@ function App() {
     className="mb-6 flex justify-center"
   >
     <img
-      src="public/logo.png"
+      src={logo}
       className="w-48 sm:w-56 h-auto shimmer-image"
       alt="Logo"
     />
