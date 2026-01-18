@@ -1,1 +1,1 @@
-/// <reference types="vite/client" />
+/// <item_link types="vite/client" />

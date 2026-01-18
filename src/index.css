@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* shimmer effect for PNG logo */
+.shimmer-image {
+    
+  display: inline-block;
+
+  -webkit-mask: linear-gradient(
+      -60deg,
+      #000 30%,
+      #0003,
+      #000 70%
+    )
+    right / 300% 100%;
+  mask: linear-gradient(
+      -60deg,
+      #000 30%,
+      #0003,
+      #000 70%
+    )
+    right / 300% 100%;
+
+  animation: shimmer 2.8s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+    mask-position: left;
+  }
+}
